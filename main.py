@@ -1,27 +1,24 @@
 # Assignment 1
 # ICS3U
-# <Arsalan>
+# <Arsalan. K>
 # March 28, 2018
 
-###### uncomment this when you are ready to work on it
+M = str(input('Converting from Celcius or Fahrenheit: '))
+if M == 'Celcius':
+    while C > -273.15:
+        print CtoF ()
+else:
+    while F > -459.67:
+        print FtoC ()
+
+
 def CtoF ():
     C = int(input('Enter your temperature in Celsius: '))
     F = (1.8)*C+32
     return round(F)
+    #int(input('The entered value is invalid. Please enter a different value:'
 
-###### uncomment this when you are ready to work on it
 def FtoC ():
     F = int(input('Enter your temperature in Fahrenheit: '))
     C = (0.55556)*(F-32)
     return round(C)
-
-def Conversion ():
-    M = str(input('Enter the measurment to be converted from: '))
-    if M == 'Celsius':
-        C = int(input('Enter your temperature in Celsius: '))
-        F = (1.8)*C+32
-        return round(F)
-    else:
-        F = int(input('Enter your temperature in Fahrenheit: '))
-        C = (0.55556)*(F-32)
-        return round(C)
